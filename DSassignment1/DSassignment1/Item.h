@@ -18,7 +18,7 @@ public:
 	virtual void receiveDamage(const int &) = 0;
 
 	//getter
-	const int getDurability();
+	const int getDurability(); //literally
 
 private:
 
