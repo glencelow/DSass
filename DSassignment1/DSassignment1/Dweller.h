@@ -9,7 +9,7 @@
 using std::string;
 
 
-class Dweller 
+class Dweller
 {
 public:
 	Dweller();
@@ -25,8 +25,8 @@ public:
 
 	//setter
 	void setPosition(const Vec2D&); //literally
-	const Vec2D setPosition(); 
-	
+	const Vec2D setPosition();
+
 	//receive
 	void receiveHealthDamage(const int&); //+hp
 	void receiveRadDamge(const int&); // +radiation
@@ -42,7 +42,7 @@ public:
 	void useRadAway(); // -radiation
 
 	//assign
-	Outfit* assignOutfit(Outfit*); 
+	Outfit* assignOutfit(Outfit*);
 	Weapon* assignWeapon(Weapon*);
 
 	//other

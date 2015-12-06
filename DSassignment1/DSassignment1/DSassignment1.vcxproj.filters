@@ -30,5 +30,8 @@
     <ClInclude Include="Dweller.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Vec2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
