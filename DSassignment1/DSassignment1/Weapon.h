@@ -13,7 +13,7 @@ public:
 	~Weapon();
 
 	//getter
-	const int getAttackDmg();
+	const int getAttackDmg(); //literally
 
 private:
 	const int KAttackDmg;
