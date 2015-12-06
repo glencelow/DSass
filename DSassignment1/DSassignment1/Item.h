@@ -6,13 +6,12 @@
 using std::string;
 
 
-class Item : public Dweller
+class Item : public Dweller					//derives from gameoject
 {
 public:
 	Item();
 	~Item();
 
-	Item(const string&, const int&);
 
 	//setter
 	virtual void receiveDamage(const int &) = 0;
@@ -21,10 +20,10 @@ public:
 	const int getDurability();
 
 private:
-
+	Item(const string&, const int&);		//name and initial dur
 
 protected:
-	int durability_;
+	int durability_;						//if <1 cant use
 
 };
 

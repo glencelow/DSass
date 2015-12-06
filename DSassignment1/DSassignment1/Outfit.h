@@ -6,20 +6,20 @@
 using std::string;
 
 
-class Outfit : public Dweller
+class Outfit : public Dweller							//derives from item class
 {
 public:
 	Outfit();
 	~Outfit();
 
 	//getter
-	virtual const int getSPECIAL();
+	virtual const int getSPECIAL();//literally
 
 
 
 private:
-	Outfit(const string&, const int&, const int&);
-	const int kSpecial;
+	Outfit(const string&, const int&, const int&);		//name plus initial dur and its special value
+	const int kSpecial;									// follows the rule of dwe special
 
 protected:
 
