@@ -19,13 +19,16 @@ public:
 
 	//getter
 	const int getDurability();
-
-private:
 	Item(const string& kName, const int& durability_);		//name and initial dur
+
+	
 
 protected:
 	int durability_;										//if <1 cant use
-	const string itemName;
+
+
+private:
+
 };
 
 

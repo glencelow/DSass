@@ -1,6 +1,5 @@
 #ifndef OUTFIT_H
 #define OUTFIT_H
-#include "Dweller.h"
 #include "Item.h"
 #include <string>
 
@@ -19,8 +18,9 @@ public:
 
 
 private:
-	const int kSpecial;																// follows the rule of dwe special
 	Outfit(const string& kName, const int& durability_, const int& kSpecial);		//name plus initial dur and its special value
+	const int kSpecial = 0;																// follows the rule of dwe special
+	
 
 protected:
 

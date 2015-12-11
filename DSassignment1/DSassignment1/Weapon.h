@@ -15,10 +15,12 @@ public:
 
 	//getter
 	const int getAttackDmg();							//literally
+	Weapon(const string& kName, const int& durability_, const int& KAttackDmg);		// name of weapon and initial dur and damage
+
 
 private:
 	const int KAttackDmg;								// literally
-	Weapon(const string& kName, const int& durability_, const int& KAttackDmg);		// name of weapon and initial dur and damage
+	
 
 protected:
 

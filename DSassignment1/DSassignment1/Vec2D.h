@@ -7,11 +7,12 @@ public:
 	Vec2D();
 	~Vec2D();
 
-
-private:
 	Vec2D(double, double);
 	double x;
 	double y;
+
+private:
+
 
 };
 
