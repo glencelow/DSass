@@ -23,10 +23,10 @@ public:
 	const int getCurrentHealth();//literally
 	const int getCurrentRadDamge();//literally
 	const int getAttackDmg(); // literally
+	const Vec2D getPosition();//get dweller pos
 
 	//setter
-	static void setPosition(const Vec2D& wherePlayerAt); //literally
-	const Vec2D setPosition();  //get dweller pos
+	void setPosition(const Vec2D& wherePlayerAt); //literally
 
 	//receive
 	void receiveHealthDamage(const int& damageTook_); //-hp
@@ -55,6 +55,7 @@ public:
 
 
 private:
+	Vec2D position_;			//literally
 	int SPECIAL_;				//attributes of dwe
 	int health_;				//current hp
 	int radiation_;				//current rad, start from 0 , determine what max hp a dwe can have 
@@ -62,7 +63,7 @@ private:
 	int radaway_;				//start from 0 , - rad
 	Outfit * outfit_;			//what dwe wearing
 	Weapon * weapon_;			// what dwe weapon
-	static Vec2D position_;			//literally
+	
 
 
 

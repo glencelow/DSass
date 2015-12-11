@@ -15,7 +15,7 @@ public:
 	//getter
 	const int getAttackDmg();														//literally
 	Weapon(const string& kName, const int& durability_, const int& kAttackDmg);		// name of weapon and initial dur and damage
-
+	virtual void receiveDamage(const int & minusItemDurability);
 
 private:
 	const int kAttackDmg;														// literally
