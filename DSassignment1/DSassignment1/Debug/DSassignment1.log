@@ -1,33 +1,26 @@
-﻿Build started 12/11/2015 1:24:38 PM.
+﻿Build started 12/11/2015 6:59:07 PM.
      1>Project "C:\Users\155109T\Desktop\DSass\DSassignment1\DSassignment1\DSassignment1.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Dweller.cpp GameObject.cpp Item.cpp Outfit.cpp Vec2D.cpp Weapon.cpp
          Weapon.cpp
-     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\outfit.h(10): error C2504: 'Dweller' : base class undefined
-     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\item.h(10): error C2504: 'Dweller' : base class undefined
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\outfit.h(10): error C2504: 'Item' : base class undefined
      1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(7): fatal error C1083: Cannot open include file: 'GameOject.h': No such file or directory
          Vec2D.cpp
          Outfit.cpp
-     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\weapon.h(10): error C2504: 'Dweller' : base class undefined
-     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\item.h(10): error C2504: 'Dweller' : base class undefined
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\weapon.h(10): error C2504: 'Item' : base class undefined
      1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(7): fatal error C1083: Cannot open include file: 'GameOject.h': No such file or directory
          Item.cpp
-     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\weapon.h(10): error C2504: 'Dweller' : base class undefined
-     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\outfit.h(10): error C2504: 'Dweller' : base class undefined
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\weapon.h(10): error C2504: 'Item' : base class undefined
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\outfit.h(10): error C2504: 'Item' : base class undefined
      1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(7): fatal error C1083: Cannot open include file: 'GameOject.h': No such file or directory
          GameObject.cpp
-     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\weapon.h(10): error C2504: 'Dweller' : base class undefined
-     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\outfit.h(10): error C2504: 'Dweller' : base class undefined
-     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\item.h(10): error C2504: 'Dweller' : base class undefined
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\item.h(11): error C2504: 'GameObject' : base class undefined
      1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(7): fatal error C1083: Cannot open include file: 'GameOject.h': No such file or directory
          Dweller.cpp
-     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\weapon.h(10): error C2504: 'Dweller' : base class undefined
-     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\outfit.h(10): error C2504: 'Dweller' : base class undefined
-     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\item.h(10): error C2504: 'Dweller' : base class undefined
      1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(7): fatal error C1083: Cannot open include file: 'GameOject.h': No such file or directory
          Generating Code...
      1>Done Building Project "C:\Users\155109T\Desktop\DSass\DSassignment1\DSassignment1\DSassignment1.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:01.93
+Time Elapsed 00:00:03.63
