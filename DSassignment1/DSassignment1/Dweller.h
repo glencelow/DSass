@@ -6,16 +6,17 @@
 #include "Item.h"
 #include "GameOject.h"
 
+
 using std::string;
 
 
-class Dweller
+class Dweller : public GameObject
 {
 public:
 	Dweller();
 	~Dweller();
 
-	Dweller(const string&, const int&);// name then the special value
+	Dweller(const string& kName, const int& kSpecial);// name then the special value
 
 	//getter
 	const int getSPECIAL();//literally
@@ -24,17 +25,17 @@ public:
 	const int getAttackDmg(); // literally
 
 	//setter
-	void setPosition(const Vec2D&); //literally
+	void setPosition(const Vec2D& position_); //literally
 	const Vec2D setPosition();
 
 	//receive
-	void receiveHealthDamage(const int&); //+hp
-	void receiveRadDamge(const int&); // +radiation
-	void receiveEquipmentDamage(const int&); //-equ durability
+	void receiveHealthDamage(const int& damageTook_); //-hp
+	void receiveRadDamge(const int& radiationTook_); // +radiation
+	void receiveEquipmentDamage(const int& eqDamge_); //-equ durability
 
 	//add
-	void addStimpak(const int&); // +1 stimpak
-	void addRadAway(const int&); // +radiation
+	void addStimpak(const int& totalStimpak); // +1 stimpak
+	void addRadAway(const int& totalRadiation); // +radiation
 
 
 	//use
@@ -42,8 +43,8 @@ public:
 	void useRadAway(); // -radiation
 
 	//assign
-	Outfit* assignOutfit(Outfit*);
-	Weapon* assignWeapon(Weapon*);
+	Outfit* assignOutfit(Outfit* Outfit_);
+	Weapon* assignWeapon(Weapon* Weapon_);
 
 	//other
 	bool isDead(); //hp<0 death

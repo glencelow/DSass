@@ -6,8 +6,8 @@
 using std::string;
 
 
-class Outfit : public Dweller							//derives from item class
-{
+class Outfit : public Item															//derives from item class
+{		
 public:
 	Outfit();
 	~Outfit();
@@ -18,8 +18,8 @@ public:
 
 
 private:
-	Outfit(const string&, const int&, const int&);		//name plus initial dur and its special value
-	const int kSpecial;									// follows the rule of dwe special
+	const int kSpecial;																// follows the rule of dwe special
+	Outfit(const string& kName, const int& durability_, const int& kSpecial);		//name plus initial dur and its special value
 
 protected:
 

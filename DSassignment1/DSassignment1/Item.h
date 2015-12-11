@@ -6,7 +6,7 @@
 using std::string;
 
 
-class Item : public Dweller					//derives from gameoject
+class Item : public GameObject				//derives from gameOject
 {
 public:
 	Item();
@@ -14,13 +14,13 @@ public:
 
 
 	//setter
-	virtual void receiveDamage(const int &) = 0;
+	virtual void receiveDamage(const int &) = 0; // this is a abstract class
 
 	//getter
 	const int getDurability();
 
 private:
-	Item(const string&, const int&);		//name and initial dur
+	Item(const string& kName, const int& durability_);		//name and initial dur
 
 protected:
 	int durability_;						//if <1 cant use

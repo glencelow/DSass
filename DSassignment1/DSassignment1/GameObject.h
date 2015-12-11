@@ -8,7 +8,7 @@ using std::string;
 
 
 
-class GameObject : public Dweller		//most important class (i think)
+class GameObject	//most important class (i think)
 {
 public:
 	GameObject();

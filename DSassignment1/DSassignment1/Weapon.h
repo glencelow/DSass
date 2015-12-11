@@ -6,7 +6,7 @@
 using std::string;
 
 
-class Weapon : public Dweller							//derives from item
+class Weapon : public Item							//derives from item
 {
 public:
 	Weapon();
@@ -17,7 +17,7 @@ public:
 
 private:
 	const int KAttackDmg;								// literally
-	Weapon(const string&, const int&, const int&);		// name of weapon and initial dur and damage
+	Weapon(const string& kName, const int& durability_, const int& KAttackDmg);		// name of weapon and initial dur and damage
 
 protected:
 
