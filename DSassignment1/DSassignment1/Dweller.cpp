@@ -44,8 +44,8 @@ void Dweller::receiveRadDamge(const int& radiationTook_)
 
 void Dweller::receiveEquipmentDamage(const int& eqDamge_)
 {
-	weapon_->receiveDamage -= eqDamge_;
-	outfit_->receiveDamage(eqDamge);
+	weapon_->receiveDamage(eqDamge_);
+	outfit_->receiveDamage(eqDamge_);
 }
 
 void Dweller::setPosition(const Vec2D& wherePlayerAt)
@@ -82,6 +82,32 @@ void Dweller::addStimpak(const int& totalStimpak)
 void Dweller::addRadAway(const int& totalRadWay)
 {
 	++radAway_;
+}
+
+Outfit* Dweller::assignOutfit(Outfit* newplayerOutfit_)
+{
+	Outfit* oldOutfit = outfit_;
+	outfit_ = newplayerOutfit_;
+	return oldOutfit;
+}
+
+Weapon* Dweller::assignWeapon(Weapon* newplayerWeapon_)
+{
+	Weapon* oldWeapon = weapon_;
+	weapon_ = newplayerWeapon_;
+	return oldWeapon;
+}
+
+bool Dweller::isDead()
+{
+	if (health_ <= 0)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 
 

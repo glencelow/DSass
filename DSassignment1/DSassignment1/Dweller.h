@@ -35,7 +35,7 @@ public:
 
 	//add
 	void addStimpak(const int& totalStimpak); // +1 stimpak
-	void addRadAway(const int& totalRadiation); // +radiation
+	void addRadAway(const int& totalRadWay); // +1 radiation
 
 
 	//use
@@ -43,14 +43,13 @@ public:
 	void useRadAway(); // -radiation
 
 	//assign
-	Outfit* assignOutfit(Outfit* Outfit_); //literally
-	Weapon* assignWeapon(Weapon* Weapon_); // literally
+	Outfit* assignOutfit(Outfit* newplayerOutfit_); //literally
+	Weapon* assignWeapon(Weapon* newplayerWeapon_); // literally
 
 	//other
 	bool isDead(); //hp<0 death
 
-	//monster
-	int monsterdamge();
+
 
 
 
@@ -59,8 +58,8 @@ private:
 	int SPECIAL_;				//attributes of dwe
 	int health_;				//current hp
 	int radiation_;				//current rad, start from 0 , determine what max hp a dwe can have 
-	int stimpak_;				//total amount, start at 0, heals dwe
-	int radaway_;				//start from 0 , - rad
+	int Stimpak_;				//total amount, start at 0, heals dwe
+	int radAway_;				//start from 0 , - rad
 	Outfit * outfit_;			//what dwe wearing
 	Weapon * weapon_;			// what dwe weapon
 	
