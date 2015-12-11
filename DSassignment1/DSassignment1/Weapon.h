@@ -1,6 +1,5 @@
 #ifndef WEAPON_H
 #define WEAPON_H
-#include "Dweller.h"
 #include "Item.h"
 #include <string>
 
@@ -19,7 +18,7 @@ public:
 
 
 private:
-	const int KAttackDmg;								// literally
+	const int KAttackDmg = 0;								// literally
 	
 
 protected:
