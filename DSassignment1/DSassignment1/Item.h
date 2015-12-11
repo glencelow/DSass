@@ -1,8 +1,8 @@
 #ifndef ITEM_H
 #define ITEM_H
-#include "Dweller.h"
-#include <string>
 #include "GameObject.h"
+#include <string>
+
 
 using std::string;
 

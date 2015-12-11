@@ -20,7 +20,7 @@ public:
 
 
 private:
-	int count_;							//store number of object of this type instantited, dwe and weapon and outfit will + 1 to count
+	static int count_;							//store number of object of this type instantited, dwe and weapon and outfit will + 1 to count
 	const string kName;					//name of the object
 
 protected:

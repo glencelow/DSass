@@ -1,15 +1,17 @@
 #include "Outfit.h"
 
-Outfit::Outfit(){}
+Outfit::Outfit()
+:kSPECIAL(0)
+{}
 Outfit::~Outfit(){}
 
 
-Outfit::Outfit(const string& kName, const int& durability_, const int& kSpecial)
-: Item(kName, durability_), kSpecial(kSpecial)
+Outfit::Outfit(const string& kName, const int& durability_, const int& kSPECIAL)
+: Item(kName, durability_), kSPECIAL(kSPECIAL)
 {}
 
 
 const int Outfit::getSPECIAL()
 {
-	return kSpecial;
+	return kSPECIAL;
 }

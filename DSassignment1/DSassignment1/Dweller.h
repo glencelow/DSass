@@ -4,8 +4,8 @@
 #include "Weapon.h"
 #include "Outfit.h"
 #include "Item.h"
-#include "GameOject.h"
-
+#include "GameObject.h"
+#include "Vec2D.h"
 
 using std::string;
 
@@ -16,7 +16,7 @@ public:
 	Dweller();
 	~Dweller();
 
-	Dweller(const string& kName, const int& kSpecial);// name then the special value
+	Dweller(const string& kName, const int& kSPECIAL);// name then the special value
 
 	//getter
 	const int getSPECIAL();//literally
@@ -25,7 +25,7 @@ public:
 	const int getAttackDmg(); // literally
 
 	//setter
-	void setPosition(const Vec2D& position_); //literally
+	void setPosition(const Vec2D& wherePlayerAt); //literally
 	const Vec2D setPosition();  //get dweller pos
 
 	//receive

@@ -6,7 +6,7 @@
 using std::string;
 
 
-class Outfit : public Item															//derives from item class
+class Outfit : public Item																//derives from item class
 {		
 public:
 	Outfit();
@@ -14,12 +14,12 @@ public:
 
 	//getter
 	virtual const int getSPECIAL();//literally
-
+	
+	Outfit(const string& kName, const int& durability_, const int& kSPECIAL);			//name plus initial dur and its special value
 
 
 private:
-	Outfit(const string& kName, const int& durability_, const int& kSpecial);		//name plus initial dur and its special value
-	const int kSpecial = 0;																// follows the rule of dwe special
+	static const int kSPECIAL;																// follows the rule of dwe special
 	
 
 protected:
