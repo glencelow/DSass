@@ -25,7 +25,7 @@ public:
 	const int getAttackDmg(); // literally
 
 	//setter
-	void setPosition(const Vec2D& wherePlayerAt); //literally
+	static void setPosition(const Vec2D& wherePlayerAt); //literally
 	const Vec2D setPosition();  //get dweller pos
 
 	//receive
@@ -49,6 +49,9 @@ public:
 	//other
 	bool isDead(); //hp<0 death
 
+	//monster
+	int monsterdamge();
+
 
 
 private:
@@ -59,7 +62,7 @@ private:
 	int radaway_;				//start from 0 , - rad
 	Outfit * outfit_;			//what dwe wearing
 	Weapon * weapon_;			// what dwe weapon
-	Vec2D position_;			//literally
+	static Vec2D position_;			//literally
 
 
 

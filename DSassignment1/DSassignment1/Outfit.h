@@ -19,7 +19,7 @@ public:
 
 
 private:
-	static const int kSPECIAL;																// follows the rule of dwe special
+	const int kSPECIAL;																// follows the rule of dwe special
 	
 
 protected:
