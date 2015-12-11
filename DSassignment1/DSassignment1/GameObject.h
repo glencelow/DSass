@@ -21,11 +21,11 @@ public:
 
 private:
 	int count_;							//store number of object of this type instantited, dwe and weapon and outfit will + 1 to count
-	virtual const string kName();
+	const string kName;					//name of the object
 
 protected:
 	GameObject(const string);
-
+	
 };
 
 

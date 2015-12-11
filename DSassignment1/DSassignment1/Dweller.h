@@ -26,7 +26,7 @@ public:
 
 	//setter
 	void setPosition(const Vec2D& position_); //literally
-	const Vec2D setPosition();
+	const Vec2D setPosition();  //get dweller pos
 
 	//receive
 	void receiveHealthDamage(const int& damageTook_); //-hp
@@ -43,8 +43,8 @@ public:
 	void useRadAway(); // -radiation
 
 	//assign
-	Outfit* assignOutfit(Outfit* Outfit_);
-	Weapon* assignWeapon(Weapon* Weapon_);
+	Outfit* assignOutfit(Outfit* Outfit_); //literally
+	Weapon* assignWeapon(Weapon* Weapon_); // literally
 
 	//other
 	bool isDead(); //hp<0 death

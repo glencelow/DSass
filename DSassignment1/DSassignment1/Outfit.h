@@ -1,6 +1,7 @@
 #ifndef OUTFIT_H
 #define OUTFIT_H
 #include "Dweller.h"
+#include "Item.h"
 #include <string>
 
 using std::string;
