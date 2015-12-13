@@ -14,3 +14,12 @@ const int Weapon::getAttackDmg()
 {
 	return kAttackDmg;
 }
+
+void Weapon::receiveDamage(const int& damage)
+{
+	durability_ -= damage / 2;
+	if (durability_ <= 0)
+	{
+		durability_ = 0;
+	}
+}
