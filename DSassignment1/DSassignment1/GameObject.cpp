@@ -1,9 +1,12 @@
-
 #include "GameObject.h"
 
 int GameObject::count_ = 0;
 
-GameObject::GameObject(const string kName)
+GameObject::GameObject()
+{
+}
+
+GameObject::GameObject(const string& kName)
 :kName(kName)
 {
 	++count_;

@@ -1,22 +1,18 @@
 #ifndef GAMEOBJECT_H
 #define GAMEOBJECT_H
-#include "Dweller.h"
 #include <string>
 
 using std::string;
-
-
-
 
 class GameObject	//most important class (i think)
 {
 public:
 	GameObject();
-	~GameObject();
+	virtual ~GameObject();
 
 	//getter
 	virtual string getName(void);		//literally
-	virtual int getCount();				//literally
+	static int getCount();				//literally
 
 
 private:
@@ -24,7 +20,7 @@ private:
 	const string kName;					//name of the object
 
 protected:
-	GameObject(const string);
+	GameObject(const string& kName);
 	
 };
 

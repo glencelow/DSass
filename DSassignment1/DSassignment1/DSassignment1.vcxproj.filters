@@ -53,5 +53,11 @@
     <ClCompile Include="Weapon.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="compileChecker.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,26 +1,46 @@
-
-#include "Dweller.h"
-=======
 #include "Dweller.h"
 
-Dweller::Dweller():
-position_(Vec2D(0, 0))
-{	
-	Stimpak_ = 0;
-	radAway_ = 0;
-}
-Dweller::~Dweller(){}
+
 
 Dweller::Dweller(const string& kName, const int& SPECIAL_)
-:GameObject(kName), SPECIAL_(SPECIAL_)
-{}
+:GameObject(kName), SPECIAL_(SPECIAL_), position_(Vec2D(0, 0)), outfit_(nullptr), weapon_(nullptr)
+{
+	Stimpak_ = 0;
+	radAway_ = 0;
+	radiation_ = 0;
+
+}
+
+Dweller::~Dweller(){}
+
+
+const int Dweller::getSPECIAL(){
+	int outFitSpecial = outfit_->getSPECIAL();
+	int dwellerSpecial = SPECIAL_;
+	int test = 1;
+	int totaltest = 0;
+
+	for (int i = 0; i <= 7; ++i){
+		if (outFitSpecial % 10 + dwellerSpecial % 10 >= 10){
+			totaltest += 9 * test;
+		}
+		else{
+			totaltest += ((outFitSpecial % 10) + (dwellerSpecial % 10)) * test;
+		}
+		outFitSpecial /= 10;
+		dwellerSpecial /= 10;
+		test *= 10;
+	}
+	return totaltest;
+
+}
 
 const int Dweller::getCurrentHealth()
 {
 	return health_;
 }
 
-const int Dweller::getCurrentRadDamge()
+const int Dweller::getCurrentRadDamage()
 {
 	return radiation_;
 }
@@ -40,7 +60,7 @@ void Dweller::receiveHealthDamage(const int& damageTook_)
 
 }
 
-void Dweller::receiveRadDamge(const int& radiationTook_)
+void Dweller::receiveRadDamage(const int& radiationTook_)
 {
 	radiation_ += radiationTook_;
 }
@@ -53,7 +73,7 @@ void Dweller::receiveEquipmentDamage(const int& eqDamge_)
 
 void Dweller::setPosition(const Vec2D& wherePlayerAt)
 {
-	position_=wherePlayerAt;
+	position_ = wherePlayerAt;
 }
 
 void Dweller::useStimpak()
@@ -69,7 +89,7 @@ void Dweller::useStimpak()
 
 void Dweller::useRadAway()
 {
-	if (radAway_ > 1)
+	if (radAway_ >= 1)
 	{
 		--radAway_;
 		radiation_ += 20;

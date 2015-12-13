@@ -1,13 +1,10 @@
 #ifndef DWELLER_H
 #define DWELLER_H
-#include <string>
 #include "Weapon.h"
 #include "Outfit.h"
-#include "Item.h"
 #include "GameObject.h"
 #include "Vec2D.h"
 
-using std::string;
 
 
 class Dweller : public GameObject
@@ -21,17 +18,17 @@ public:
 	//getter
 	const int getSPECIAL();//literally
 	const int getCurrentHealth();//literally
-	const int getCurrentRadDamge();//literally
+	const int getCurrentRadDamage();//literally
 	const int getAttackDmg(); // literally
 	const Vec2D getPosition();//get dweller pos
 
 	//setter
 	void setPosition(const Vec2D& wherePlayerAt); //literally
-
 	//receive
 	void receiveHealthDamage(const int& damageTook_); //-hp
-	void receiveRadDamge(const int& radiationTook_); // +radiation
+	void receiveRadDamage(const int& radiationTook_); // +radiation
 	void receiveEquipmentDamage(const int& eqDamge_); //-equ durability
+
 
 	//add
 	void addStimpak(const int& totalStimpak); // +1 stimpak
