@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #include "Dweller.h"
 =======
 #include "Dweller.h"
@@ -119,5 +119,3 @@ bool Dweller::isDead()
 
 
 
-
->>>>>>> origin/master

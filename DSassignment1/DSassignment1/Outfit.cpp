@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-#include "Outfit.h"
-=======
+
 #include "Outfit.h"
 
 Outfit::Outfit()
@@ -18,4 +16,4 @@ const int Outfit::getSPECIAL()
 {
 	return kSPECIAL;
 }
->>>>>>> origin/master
+

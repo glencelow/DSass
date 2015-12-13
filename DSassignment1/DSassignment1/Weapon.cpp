@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-#include "Weapon.h"
-=======
+
 #include "Weapon.h"
 
 Weapon::Weapon()
@@ -16,4 +14,3 @@ const int Weapon::getAttackDmg()
 {
 	return kAttackDmg;
 }
->>>>>>> origin/master

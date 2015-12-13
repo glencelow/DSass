@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-#include "GameObject.h"
-=======
+
 #include "GameObject.h"
 
 int GameObject::count_ = 0;
@@ -24,4 +22,3 @@ int GameObject::getCount()
 {
 	return count_;
 }
->>>>>>> origin/master

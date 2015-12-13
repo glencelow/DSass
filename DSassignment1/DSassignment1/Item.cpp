@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-#include "Item.h"
-=======
 #include "Item.h"
 
 Item::Item(){}
@@ -22,4 +19,3 @@ const int Item::getDurability()
 }
 
 
->>>>>>> origin/master
