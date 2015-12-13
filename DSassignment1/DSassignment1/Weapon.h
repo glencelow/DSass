@@ -1,33 +1,31 @@
 #ifndef WEAPON_H
 #define WEAPON_H
-#include "Dweller.h"
+#include "Item.h"
 #include <string>
 
 using std::string;
 
-
-class Weapon : public Dweller							//derives from item
+		
+class Weapon : public Item															//derives from item
 {
 public:
 	Weapon();
 	~Weapon();
 
 	//getter
-	const int getAttackDmg();							//literally
+	const int getAttackDmg();														//literally
+	Weapon(const string& kName, const int& durability_, const int& kAttackDmg);		// name of weapon and initial dur and damage
+	virtual void receiveDamage(const int & minusItemDurability);
 
 private:
-	const int KAttackDmg;								// literally
-	Weapon(const string&, const int&, const int&);		// name of weapon and initial dur and damage
+	const int kAttackDmg;														// literally
+	
 
 protected:
 
 
 
 };
-
-
-
-
 
 
 #endif

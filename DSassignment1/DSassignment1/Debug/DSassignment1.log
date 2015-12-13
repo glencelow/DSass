@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿Build started 12/11/2015 1:24:38 PM.
      1>Project "C:\Users\155109T\Desktop\DSass\DSassignment1\DSassignment1\DSassignment1.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
@@ -25,9 +26,46 @@
      1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\outfit.h(10): error C2504: 'Dweller' : base class undefined
      1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\item.h(10): error C2504: 'Dweller' : base class undefined
      1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(7): fatal error C1083: Cannot open include file: 'GameOject.h': No such file or directory
+=======
+﻿Build started 12/11/2015 7:25:31 PM.
+     1>Project "C:\Users\155109T\Desktop\DSass\DSassignment1\DSassignment1\DSassignment1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Dweller.cpp GameObject.cpp Item.cpp Outfit.cpp Weapon.cpp
+         Weapon.cpp
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\outfit.h(10): error C2504: 'Item' : base class undefined
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(14): error C2504: 'GameObject' : base class undefined
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(47): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(47): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(47): error C2061: syntax error : identifier 'Weapon'
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(47): warning C4183: 'assignWeapon': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(61): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(61): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+         Outfit.cpp
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\weapon.h(10): error C2504: 'Item' : base class undefined
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(14): error C2504: 'GameObject' : base class undefined
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(46): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(46): error C2061: syntax error : identifier 'Outfit'
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(46): warning C4183: 'assignOutfit': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(60): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(60): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+         Item.cpp
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\weapon.h(10): error C2504: 'Item' : base class undefined
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\outfit.h(10): error C2504: 'Item' : base class undefined
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(14): error C2504: 'GameObject' : base class undefined
+         GameObject.cpp
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\item.h(11): error C2504: 'GameObject' : base class undefined
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.h(14): error C2504: 'GameObject' : base class undefined
+         Dweller.cpp
+     1>c:\users\155109t\desktop\dsass\dsassignment1\dsassignment1\dweller.cpp(18): error C2065: 'kAttackDmg' : undeclared identifier
+>>>>>>> origin/master
          Generating Code...
      1>Done Building Project "C:\Users\155109T\Desktop\DSass\DSassignment1\DSassignment1\DSassignment1.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
+<<<<<<< HEAD
 Time Elapsed 00:00:01.93
+=======
+Time Elapsed 00:00:01.89
+>>>>>>> origin/master

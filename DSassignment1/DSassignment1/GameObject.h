@@ -8,7 +8,7 @@ using std::string;
 
 
 
-class GameObject : public Dweller		//most important class (i think)
+class GameObject	//most important class (i think)
 {
 public:
 	GameObject();
@@ -20,12 +20,12 @@ public:
 
 
 private:
-	int count_;							//store number of object of this type instantited, dwe and weapon and outfit will + 1 to count
-	virtual const string kName();
+	static int count_;							//store number of object of this type instantited, dwe and weapon and outfit will + 1 to count
+	const string kName;					//name of the object
 
 protected:
 	GameObject(const string);
-
+	
 };
 
 
