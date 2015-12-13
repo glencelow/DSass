@@ -9,7 +9,8 @@ Dweller::Dweller(const string& kName, const int& SPECIAL_)
 Dweller::~Dweller(){}
 
 
-const int Dweller::getSPECIAL(){
+const int Dweller::getSPECIAL()
+{
 
 	if (outfit_)
 	{

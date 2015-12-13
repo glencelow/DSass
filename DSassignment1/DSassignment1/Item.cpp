@@ -21,7 +21,7 @@ const int Item::getDurability()
 }
 
 
-void Item::receiveDamage(const int& minusItemDurability_)
+void Item::receiveDamage(const int& minusItemDurability_) 
 {		
 	durability_ -= minusItemDurability_;
 }

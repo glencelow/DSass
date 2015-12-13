@@ -14,7 +14,7 @@ const int Outfit::getSPECIAL()
 	return kSPECIAL;
 }
 
-void Outfit::receiveDamage(const int& damage)
+void Outfit::receiveDamage(const int& damage) //outfit dur check
 {
 	durability_ -= damage;
 	if (durability_ < 0){
