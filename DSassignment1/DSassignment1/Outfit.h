@@ -9,13 +9,12 @@ using std::string;
 class Outfit : public Item																//derives from item class
 {		
 public:
-	Outfit();
-	~Outfit();
+	Outfit(const string& kName, const int& durability_, const int& kSPECIAL);			//name plus initial dur and its special value
+	virtual ~Outfit();
 
 	//getter
 	virtual const int getSPECIAL();//literally
 	
-	Outfit(const string& kName, const int& durability_, const int& kSPECIAL);			//name plus initial dur and its special value
 	virtual void receiveDamage(const int & damge);
 
 private:

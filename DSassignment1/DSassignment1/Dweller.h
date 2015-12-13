@@ -25,9 +25,9 @@ public:
 	//setter
 	void setPosition(const Vec2D& wherePlayerAt); //literally
 	//receive
-	void receiveHealthDamage(const int& damageTook_); //-hp
-	void receiveRadDamage(const int& radiationTook_); // +radiation
-	void receiveEquipmentDamage(const int& eqDamge_); //-equ durability
+	void receiveHealthDamage(const int& damage); //-hp
+	void receiveRadDamage(const int& health_); // +radiation
+	void receiveEquipmentDamage(const int& durability_); //-equ durability
 
 
 	//add

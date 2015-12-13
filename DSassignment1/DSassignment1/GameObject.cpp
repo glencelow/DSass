@@ -2,10 +2,6 @@
 
 int GameObject::count_ = 0;
 
-GameObject::GameObject()
-{
-}
-
 GameObject::GameObject(const string& kName)
 :kName(kName)
 {
@@ -15,6 +11,7 @@ GameObject::~GameObject()
 {
 	--count_;
 }
+
 
 string GameObject::getName(void)
 {

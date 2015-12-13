@@ -3,36 +3,22 @@
 
 
 Dweller::Dweller(const string& kName, const int& SPECIAL_)
-:GameObject(kName), SPECIAL_(SPECIAL_), position_(Vec2D(0, 0)), outfit_(nullptr), weapon_(nullptr)
-{
-	Stimpak_ = 0;
-	radAway_ = 0;
-	radiation_ = 0;
-
-}
+:GameObject(kName), SPECIAL_(SPECIAL_), position_(Vec2D(0, 0)), outfit_(nullptr), weapon_(nullptr), health_(100), Stimpak_(0), radAway_(0), radiation_(0)
+{}
 
 Dweller::~Dweller(){}
 
 
 const int Dweller::getSPECIAL(){
-	int outFitSpecial = outfit_->getSPECIAL();
-	int dwellerSpecial = SPECIAL_;
-	int test = 1;
-	int totaltest = 0;
 
-	for (int i = 0; i <= 7; ++i){
-		if (outFitSpecial % 10 + dwellerSpecial % 10 >= 10){
-			totaltest += 9 * test;
-		}
-		else{
-			totaltest += ((outFitSpecial % 10) + (dwellerSpecial % 10)) * test;
-		}
-		outFitSpecial /= 10;
-		dwellerSpecial /= 10;
-		test *= 10;
+	if (outfit_)
+	{
+		return SPECIAL_ + outfit_->getSPECIAL();
 	}
-	return totaltest;
-
+	else
+	{
+		return SPECIAL_;
+	}
 }
 
 const int Dweller::getCurrentHealth()
@@ -47,28 +33,36 @@ const int Dweller::getCurrentRadDamage()
 
 const int Dweller::getAttackDmg()
 {
-	return weapon_->getAttackDmg();
+	if (weapon_ && weapon_->getDurability() > 0){
+		return weapon_->getAttackDmg();
+	}
+	else{
+		return 1;
+	}
 }
 const Vec2D Dweller::getPosition()
 {
 	return position_;
 }
 
-void Dweller::receiveHealthDamage(const int& damageTook_)
+void Dweller::receiveHealthDamage(const int& damageTook)
 {
-	health_ -= damageTook_;
+	health_ -= damageTook;
 
 }
 
-void Dweller::receiveRadDamage(const int& radiationTook_)
+void Dweller::receiveRadDamage(const int& radiationTook)
 {
-	radiation_ += radiationTook_;
+	radiation_ += radiationTook;
 }
 
-void Dweller::receiveEquipmentDamage(const int& eqDamge_)
+void Dweller::receiveEquipmentDamage(const int& eqDamage)
 {
-	weapon_->receiveDamage(eqDamge_);
-	outfit_->receiveDamage(eqDamge_);
+	if (outfit_ > 0)
+	{
+		weapon_->receiveDamage(eqDamage);
+		outfit_->receiveDamage(eqDamage);
+	}
 }
 
 void Dweller::setPosition(const Vec2D& wherePlayerAt)
@@ -92,7 +86,7 @@ void Dweller::useRadAway()
 	if (radAway_ >= 1)
 	{
 		--radAway_;
-		radiation_ += 20;
+		radiation_ += 10;
 	}
 	else{}
 }
